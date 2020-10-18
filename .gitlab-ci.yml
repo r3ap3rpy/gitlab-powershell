@@ -1,4 +1,6 @@
 test:
   script:
   - $psversiontable
-  - get-process
+  - git clone https://github.com/r3ap3rpy/gitlab-flask
+  - pip install -r .\gitlab-flask\requirements.txt
+  - cd .\gitlab-flask ; pytest
